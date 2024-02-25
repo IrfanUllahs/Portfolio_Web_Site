@@ -47,8 +47,15 @@ button {
   cursor: pointer;
 }
 
-/* img {
-  display: inline-block;
-  width: 100%;
-  object-fit: cover;
-} */
+.slick-dots li button:before {
+  @apply text-xl;
+}
+
+.slick-dots li.slick-active button:before {
+  @apply text-red-500;
+}
+
+/* Inactive dots */
+.slick-dots li button:before {
+  @apply text-white;
+}

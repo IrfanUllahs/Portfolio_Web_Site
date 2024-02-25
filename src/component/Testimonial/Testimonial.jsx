@@ -1,7 +1,8 @@
 import React from "react";
 
 import Slider from "react-slick";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Customers = [
   {
     id: 1,
@@ -27,52 +28,56 @@ const Customers = [
 ];
 function Testimonial() {
   var settings = {
-    dots: false,
-    arrows: true,
+    dots: true,
     infinite: true,
-    speed: 800,
+    speed: 500,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    cssEase: "ease-in-out",
-    pauseOnHover: false,
-    pauseOnFocus: true,
+    infinite: true,
+    arrows: false,
   };
   return (
-    <section className="h-[550px] flex justify-center flex-col sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3 items-center  mx-auto gap-4 border-2 py-[30px] md:px-[100px] px-2 ">
-      <h5 className="text-[#edc8c8b7] font-medium">Review from Clients</h5>
+    // <section className="h-[550px] flex justify-center flex-col sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3 items-center  mx-auto gap-4 border-2 py-[30px] md:px-[100px] px-2 text-white ">
+    //   <h5 className="text-[#edc8c8b7] font-medium">Review from Clients</h5>
+    //   <h1 className="text-[35px] font-medium text-colorprimary mb-3">
+    //     Testimonials
+    //   </h1>
+    //   {Customers.map((item) => (
+    //     <div
+    //       className="lg:w-[60%] lg:px-[10px] w-full h-[90%] flex flex-col gap-3 items-center  bg-colorbgvariant rounded-xl pt-4"
+    //       key={item.id}
+    //     >
+    //       <div className=" w-[100px] h-[80px] overflow-hidden rounded-full">
+    //         <img
+    //           src={item.img}
+    //           className="object-cover rounded-full object-center"
+    //         />
+    //       </div>
+    //       <p className="font-bold text-[20px]">{item.title}</p>
+    //       <p className="text-center sm:text-[16px] text-[14px]">
+    //         {item.comment}
+    //       </p>
+    //     </div>
+    //   ))}
+    // </section>
+    <section className="h-[600px]  gap-3 md:gap-6  sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3  mx-auto  flex flex-col items-center justify-center  ">
+      <h5 className="text-[#edc8c8b7] font-medium md:mt-8">
+        Review from Clients
+      </h5>
       <h1 className="text-[35px] font-medium text-colorprimary mb-3">
         Testimonials
       </h1>
-      {/* {Customers.map((item) => (
-        <div
-          className="lg:w-[60%] lg:px-[10px] w-full h-[90%] flex flex-col gap-3 items-center  bg-colorbgvariant rounded-xl pt-4"
-          key={item.id}
-        >
-          <div className=" w-[100px] h-[80px] overflow-hidden rounded-full">
-            <img
-              src={item.img}
-              className="object-cover rounded-full object-center"
-            />
-          </div>
-          <p className="font-bold text-[20px]">{item.title}</p>
-          <p className="text-center sm:text-[16px] text-[14px]">
-            {item.comment}
-          </p>
-        </div>
-      ))} */}
-      {/* <div className="lg:w-[60%] lg:px-[10px] w-full h-[90%] flex flex-col gap-3 items-center border-2 overflow-hidden">
+      <div className="  lg:w-[50%] h-[90%] md:w-[70%] w-[95%] md:mt-4 border-2 px-2 ">
         <Slider {...settings}>
           {Customers.map((item) => (
-            <div key={item.id}>
-              <div className="border-2 border-red-700 gap-3 items-center  bg-colorbgvariant rounded-xl pt-4">
+            <div key={item.id} className="w-full ">
+              <div className="p-[10px] w-full h-[100%] flex flex-col gap-3 items-center justify-center  bg-colorbgvariant rounded-xl pt-4 ">
                 <div className=" w-[100px] h-[80px] overflow-hidden rounded-full">
                   <img
                     src={item.img}
                     className="object-cover rounded-full object-center"
                   />
                 </div>
-                <p>IRfan</p>
                 <p className="font-bold text-[20px]">{item.title}</p>
                 <p className="text-center sm:text-[16px] text-[14px]">
                   {item.comment}
@@ -81,7 +86,7 @@ function Testimonial() {
             </div>
           ))}
         </Slider>
-      </div> */}
+      </div>
     </section>
   );
 }

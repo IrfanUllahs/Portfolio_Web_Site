@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+
+import emailValidator from "email-validator";
 const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
 const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const userId = import.meta.env.VITE_EMAILJS_USER_ID;
-
 const EmailForm = () => {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
@@ -12,14 +13,22 @@ const EmailForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Validate sender's email
+    if (!emailValidator.validate(senderEmail)) {
+      console.error("Invalid email address");
+      return; // Stop execution if email is invalid
+    }
+
+    // Validate email body
+    if (!body.trim()) {
+      console.error("Email body cannot be empty");
+      return; // Stop execution if body is empty
+    }
+
     // Send email using emailjs
+    console.log(serviceId, templateId, userId);
     emailjs
-      .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        { subject, body, senderEmail },
-        process.env.REACT_APP_EMAILJS_USER_ID
-      )
+      .send(serviceId, templateId, { subject, body, senderEmail }, userId)
       .then((response) => {
         console.log("Email sent successfully:", response);
       })
@@ -56,9 +65,9 @@ const EmailForm = () => {
         onChange={(e) => setSenderEmail(e.target.value)}
       />
 
-      <a className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant max-w-[160px] ">
-        Send Message
-      </a>
+      <p className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant max-w-[160px] ">
+        <button type="submit"> Send Message</button>
+      </p>
     </form>
   );
 };

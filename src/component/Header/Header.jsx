@@ -31,9 +31,18 @@ function Header() {
           />
         </div>
         <div className="absolute rotate-90 left-[10%] hidden  top-[450px]   sm:flex gap-4 text-[20px]">
-          <FaLinkedin className="hover:text-white text-colorprimary cursor-pointer" />
-          <FaGithub className="hover:text-white text-colorprimary cursor-pointer" />
-          <FaInstagram className="hover:text-white text-colorprimary cursor-pointer" />
+          <a
+            href="https://www.linkedin.com/in/irfan-ullah-2155b5235"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/IrfanUllahs" target="_blank">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/irfanullah8168/" target="_blank">
+            <FaInstagram className="hover:text-white text-colorprimary cursor-pointer" />
+          </a>
         </div>
         <div className="absolute rotate-90 right-[10%] top-[450px] hidden    sm:flex  gap-4 text-[20px] cursor-pointer">
           <p className="hover:text-white text-colorprimary">Scroll Down</p>

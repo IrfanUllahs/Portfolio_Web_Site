@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section
       className="  flex justify-center flex-col sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3 items-center  mx-auto  gap-4 border-2  "
-      id="experience"
+      id="portfolio"
     >
       <h5 className="text-[#fff4f4b7] font-medium">My Recent Work</h5>
       <h1 className="text-[35px] font-medium text-colorprimary mb-3">

@@ -37,30 +37,10 @@ function Testimonial() {
     arrows: false,
   };
   return (
-    // <section className="h-[550px] flex justify-center flex-col sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3 items-center  mx-auto gap-4 border-2 py-[30px] md:px-[100px] px-2 text-white ">
-    //   <h5 className="text-[#edc8c8b7] font-medium">Review from Clients</h5>
-    //   <h1 className="text-[35px] font-medium text-colorprimary mb-3">
-    //     Testimonials
-    //   </h1>
-    //   {Customers.map((item) => (
-    //     <div
-    //       className="lg:w-[60%] lg:px-[10px] w-full h-[90%] flex flex-col gap-3 items-center  bg-colorbgvariant rounded-xl pt-4"
-    //       key={item.id}
-    //     >
-    //       <div className=" w-[100px] h-[80px] overflow-hidden rounded-full">
-    //         <img
-    //           src={item.img}
-    //           className="object-cover rounded-full object-center"
-    //         />
-    //       </div>
-    //       <p className="font-bold text-[20px]">{item.title}</p>
-    //       <p className="text-center sm:text-[16px] text-[14px]">
-    //         {item.comment}
-    //       </p>
-    //     </div>
-    //   ))}
-    // </section>
-    <section className="h-[600px]  gap-3 md:gap-6  sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3  mx-auto  flex flex-col items-center justify-center  ">
+    <section
+      className="h-[600px]  gap-3 md:gap-6  sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3  mx-auto  flex flex-col items-center justify-center   "
+      id="contact"
+    >
       <h5 className="text-[#edc8c8b7] font-medium md:mt-8">
         Review from Clients
       </h5>

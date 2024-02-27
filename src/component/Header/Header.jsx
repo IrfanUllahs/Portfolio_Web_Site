@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { TypeAnimation } from "react-type-animation";
+import Typewriter from "typewriter-effect";
 
 function Header() {
   return (
@@ -9,7 +11,30 @@ function Header() {
     >
       <div className="text-center flex gap-4 flex-col items-center relative w-full h-full ">
         <h5 className="font-medium">Hello I'am</h5>
-        <h1 className="text-[40px] font-medium">IRFAN ULLAH</h1>
+        {/* <h1 className="text-[50px] font-bold  text-colorprimary tracking-[5px]">
+          IRFAN ULLAH
+        </h1> */}
+        <div className="text-[50px] font-bold text-colorprimary tracking-5">
+          <Typewriter
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 200,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("IRFAN ULLAH.")
+                .callFunction(() => {
+                  console.log("String typed out!");
+                })
+                .pauseFor(4000)
+                .deleteAll()
+
+                .start();
+            }}
+          />
+        </div>
+
         <h5 className="text-[#fff4f4b7] font-medium">Front End Developer</h5>
         {/* buttons  */}
         <div className="flex gap-3 ">
@@ -21,7 +46,7 @@ function Header() {
             Download CV
           </a>
           <a className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant">
-            Let' Talk
+            Let's Talk
           </a>
         </div>
         <div className="w-[300px] sm:w-[350px]  h-[450px] bg-gradient-to-b from-colorprimary to-transparent rounded-t-full overflow-hidden">

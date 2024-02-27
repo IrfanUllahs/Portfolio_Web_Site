@@ -11,6 +11,7 @@ import Contact from "./component/contact/Contact";
 function App() {
   return (
     <>
+      <div className="h-[80px]"></div>
       <Header />
       <Navbar />
       <About />

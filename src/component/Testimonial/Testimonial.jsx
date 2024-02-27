@@ -47,10 +47,10 @@ function Testimonial() {
       <h1 className="text-[35px] font-medium text-colorprimary mb-3">
         Testimonials
       </h1>
-      <div className="  lg:w-[50%] h-[90%] md:w-[70%] w-[95%] md:mt-4 border-2 px-2 ">
+      <div className="  lg:w-[50%] h-[90%] md:w-[70%] w-[95%] md:mt-4 border-2 border-red-600 px-2  ">
         <Slider {...settings}>
           {Customers.map((item) => (
-            <div key={item.id} className="w-full ">
+            <div key={item.id} className="w-full p-4 ">
               <div className="p-[10px] w-full h-[100%] flex flex-col gap-3 items-center justify-center  bg-colorbgvariant rounded-xl pt-4 ">
                 <div className=" w-[100px] h-[80px] overflow-hidden rounded-full">
                   <img

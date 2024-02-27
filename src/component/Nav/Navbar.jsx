@@ -3,7 +3,9 @@ import { FaHome } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
-import { useState } from "react";
+import { FaTools } from "react-icons/fa";
+import { MdContactPhone } from "react-icons/md";
+
 import ScrollSpy from "./ScrollSpy";
 
 function Navbar() {
@@ -38,6 +40,15 @@ function Navbar() {
         href="#experience"
         onClick={() => setActive("experience")} // Added onClick event to set active section
       >
+        <FaTools className="text-[30px]" />
+      </a>
+      <a
+        className={`p-2 rounded-full hover:bg-gray-950 ${
+          activeSection === "portfolio" && "bg-gray-950 text-white"
+        }`}
+        href="#portfolio"
+        onClick={() => setActive("experience")} // Added onClick event to set active section
+      >
         <BiBook className="text-[30px]" />
       </a>
       <a
@@ -48,16 +59,7 @@ function Navbar() {
         href="#contact" // Corrected href
         onClick={() => setActive("contact")} // Added onClick event to set active section
       >
-        <RiServiceLine className="text-[30px]" />
-      </a>
-      <a
-        className={`p-2 rounded-full hover:bg-gray-950 ${
-          activeSection === "some-other-section" && // Corrected section ID
-          "bg-gray-950 text-white"
-        }`}
-        onClick={() => setActive("some-other-section")} // Added onClick event to set active section
-      >
-        <RiServiceLine className="text-[30px]" />
+        <MdContactPhone className="text-[30px]" />
       </a>
     </div>
   );

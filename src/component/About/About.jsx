@@ -46,9 +46,9 @@ const About = () => {
             </p>
             <a
               className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant "
-              href="contact"
+              href="#contact"
             >
-              Let's Talk
+              Let' Talk
             </a>
           </div>
         </div>

@@ -23,7 +23,7 @@ const About = () => {
           </div>
           <div className="sm:w-[500px] w-[300px] sm:h-[100%] h-[70%]  ml-5 flex gap-5 items-start   flex-col   justify-center ">
             <div className="flex gap-5 justify-center sm:flex-nowrap flex-wrap  ">
-              <div className="h-[150px] sm:w-[150px] w-[250px]  rounded-[20px] p flex justify-center flex-col items-center gap-3 hover:bg-colorbg border border-transparent  hover:border hover:border-gray-600 duration-500">
+              <div className="h-[150px] sm:w-[150px] w-[250px] bg-colorbgvariant rounded-[20px] p flex justify-center flex-col items-center gap-3 hover:bg-colorbg border border-transparent  hover:border hover:border-gray-600 duration-500">
                 <FaCode className="text-[30px] text-colorprimary" />
                 <h1 className="font-bold text-[18px]">Experience</h1>
                 <p className="text-[#fff4f4b7] text-[14px]">1+ Year Working</p>
@@ -44,8 +44,11 @@ const About = () => {
               width or height of the content. For text content this means that
               the content will not wrap at all even if it causes overflows
             </p>
-            <a className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant ">
-              Let' Talk
+            <a
+              className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant "
+              href="contact"
+            >
+              Let's Talk
             </a>
           </div>
         </div>

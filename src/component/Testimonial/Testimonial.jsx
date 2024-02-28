@@ -38,8 +38,8 @@ function Testimonial() {
   };
   return (
     <section
-      className="h-[600px]  gap-3 md:gap-6  sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3  mx-auto  flex flex-col items-center justify-center   "
-      id="contact"
+      className="h-[600px]  gap-3 md:gap-6  sm:w-[90%] md:w-[86%] lg:w-[75%] mt-3  mx-auto  flex flex-col items-center justify-center irfan   "
+      id="testimonial"
     >
       <h5 className="text-[#edc8c8b7] font-medium md:mt-8">
         Review from Clients

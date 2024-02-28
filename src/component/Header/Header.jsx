@@ -45,7 +45,10 @@ function Header() {
           >
             Download CV
           </a>
-          <a className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant">
+          <a
+            className="border-colorprimary border-2 px-4 py-2 rounded-md bg-colorprimary text-colorbgvariant"
+            href="#contact"
+          >
             Let's Talk
           </a>
         </div>
@@ -69,9 +72,13 @@ function Header() {
             <FaInstagram className="hover:text-white text-colorprimary cursor-pointer" />
           </a>
         </div>
-        <div className="absolute rotate-90 right-[10%] top-[450px] hidden    sm:flex  gap-4 text-[20px] cursor-pointer">
+
+        <a
+          href="#portfolio"
+          className="absolute rotate-90 right-[10%] top-[450px] hidden    sm:flex  gap-4 text-[20px] cursor-pointer"
+        >
           <p className="hover:text-white text-colorprimary">Scroll Down</p>
-        </div>
+        </a>
       </div>
     </section>
   );

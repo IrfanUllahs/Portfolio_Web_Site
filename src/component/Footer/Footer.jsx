@@ -16,13 +16,13 @@ function Footer() {
           <a href="#experience" className="text-colorbgvariant">
             <li>Experience</li>
           </a>
-          <a href="#experience" className="text-colorbgvariant">
+          <a href="#portfolio" className="text-colorbgvariant">
             <li>Portfolio</li>
           </a>
-          <a href="#experience" className="text-colorbgvariant">
+          <a href="#testimonial" className="text-colorbgvariant">
             <li>Testimonilas</li>
           </a>
-          <a href="#experience" className="text-colorbgvariant">
+          <a href="#contact" className="text-colorbgvariant">
             <li>Contact Us</li>
           </a>
         </ul>

@@ -51,7 +51,7 @@ function Header() {
         </div>
         <div className="w-[300px] sm:w-[350px]  h-[450px] bg-gradient-to-b from-colorprimary to-transparent rounded-t-full overflow-hidden">
           <img
-            src={"../../../public/assets/me.png"}
+            src={"../../../assets/me.png"}
             className="hover:scale-110 duration-1000 object-contain w-full mt-8"
           />
         </div>

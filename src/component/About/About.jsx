@@ -17,7 +17,7 @@ const About = () => {
           {/* this is image div */}
           <div className="sm:w-[350px] w-[250px] sm:h-[60%] h-[30%]  bg-gradient-to-tr rounded-[20px] from-colorprimary to-transparent  mt-9 ml-9  ">
             <img
-              src={"../../../public/assets/me-about.jpg"}
+              src={"../../../assets/me-about.jpg"}
               className="w-full h-full object-cover overscroll-none rounded-[20px] rotate-12 hover:rotate-0 duration-500 "
             />
           </div>

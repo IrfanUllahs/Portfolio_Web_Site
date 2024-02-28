@@ -39,7 +39,7 @@ function Header() {
         {/* buttons  */}
         <div className="flex gap-3 ">
           <a
-            href={"../../../public/assets/cv.pdf"}
+            href={"../../../assets/cv.pdf"}
             download
             className="border-colorprimary border-2 px-4 py-2 rounded-md hover:bg-white hover:text-colorbg "
           >
